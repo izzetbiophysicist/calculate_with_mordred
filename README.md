@@ -1,5 +1,5 @@
 # calculate_with_mordred
-Calculates descriptors for an array of smiles using mordred
+Calculates descriptors for an array of molecules in the SMILES format using mordred
 
 Usage
 
