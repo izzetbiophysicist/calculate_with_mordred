@@ -13,14 +13,9 @@ import argparse
 from mordred import Calculator
 from mordred import descriptors
 
-
-
-############
-## Read dataframe with compounds
-###########
-
 def calc_desc(mol_path):
     
+    ## read input
     mol_array = pd.read_csv(mol_path, header=None)
     
     
@@ -28,11 +23,11 @@ def calc_desc(mol_path):
     
     mol_array_mol = [rd.Chem.MolFromSmiles(m, sanitize=True) for m in mol_array]
     
-    
+    #### calculate descriptors
     calc = Calculator(descriptors, ignore_3D=True)
     
+    ## convert to dataframe
     desc_mol_array = calc.pandas(mol_array_mol)
-    #desc_act = desc_act.to_numpy()
     
     return desc_mol_array
 
