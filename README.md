@@ -5,7 +5,7 @@ Calculates descriptors for an array of molecules in the SMILES format using libr
 
 python3.8 mordred_descriptors.py --i ./smiles.csv --o ./output
 
-the input CSV should contain a single column containing the molecules in SMILES format
+the input CSV should contain a single column containing the molecules in SMILES format. Returns a dataframe with all the descriptors for all the molecules in the input csv
 
 
 
