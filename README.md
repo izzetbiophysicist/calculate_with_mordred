@@ -1,5 +1,5 @@
 # calculate_with_mordred
-Calculates descriptors for an array of molecules in the SMILES format using mordred
+Calculates descriptors for an array of molecules in the SMILES format using library Mordred (https://doi.org/10.1186/s13321-018-0258-y)
 
 Usage
 
